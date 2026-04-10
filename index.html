@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Family Manager — Getting Started | Nalkudil Studio</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--bg:#0D1B2A;--bg2:#0f2237;--card:#132842;--teal:#1DBFB0;--gold:#E8A83A;
+--text:#e2ecf5;--muted:#7a96b0;--border:#1c3650}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.65;font-size:16px}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:100;background:rgba(13,27,42,.96);backdrop-filter:blur(8px);
+border-bottom:1px solid var(--border);padding:0 max(20px,calc((100% - 960px)/2));
+display:flex;align-items:center;gap:28px;height:58px;flex-wrap:nowrap}
+.nb{width:28px;height:28px;background:var(--teal);border-radius:6px;display:flex;align-items:center;
+justify-content:center;font-family:'Chakra Petch',sans-serif;font-weight:800;font-size:.72rem;
+color:var(--bg);flex-shrink:0}
+.brand{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.12em;
+color:var(--text);display:flex;align-items:center;gap:8px;text-decoration:none!important;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.nl{font-size:.82rem;color:var(--muted);transition:color .2s;white-space:nowrap}
+.nl:hover{color:var(--teal);text-decoration:none}
+.nr{margin-left:auto;display:flex;gap:18px;align-items:center}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+.hero{padding:72px 24px 56px;text-align:center;max-width:760px;margin:0 auto}
+.hbadge{display:inline-block;background:rgba(29,191,176,.1);border:1px solid rgba(29,191,176,.25);
+color:var(--teal);border-radius:20px;padding:5px 16px;font-size:.75rem;font-weight:600;
+letter-spacing:.07em;margin-bottom:22px}
+h1{font-family:'Chakra Petch',sans-serif;font-size:clamp(1.75rem,4.5vw,2.75rem);font-weight:700;
+line-height:1.18;margin-bottom:14px}
+.sub{font-size:1rem;color:var(--muted);max-width:520px;margin:0 auto 28px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:8px;
+font-weight:600;font-size:.88rem;transition:all .2s}
+.bp{background:var(--teal);color:var(--bg)}.bp:hover{background:#22d4c4;text-decoration:none;color:var(--bg)}
+.bg2btn{border:1px solid var(--border);color:var(--text)}.bg2btn:hover{border-color:var(--teal);color:var(--teal);text-decoration:none}
+section{padding:56px 0}section+section{border-top:1px solid var(--border)}
+.slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;color:var(--teal);text-transform:uppercase;margin-bottom:10px}
+.stitle{font-family:'Chakra Petch',sans-serif;font-size:clamp(1.2rem,2.5vw,1.65rem);font-weight:700;margin-bottom:36px}
+.steps{display:grid;gap:16px}
+.step{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px 28px;
+display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start}
+.sn{width:44px;height:44px;background:rgba(29,191,176,.1);border:1px solid rgba(29,191,176,.25);
+border-radius:9px;display:flex;align-items:center;justify-content:center;
+font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--teal);font-size:.88rem;flex-shrink:0}
+.step h3{font-family:'Chakra Petch',sans-serif;font-size:.92rem;font-weight:700;margin-bottom:6px}
+.step .sdesc{color:var(--muted);font-size:.86rem;margin-bottom:10px}
+.step ul{list-style:none}.step ul li{font-size:.84rem;color:var(--muted);padding:3px 0 3px 18px;position:relative}
+.step ul li::before{content:'→';position:absolute;left:0;color:var(--teal);font-size:.78rem;top:5px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.fc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px}
+.fi{font-size:1.65rem;margin-bottom:10px}.ft{font-size:.66rem;font-weight:700;letter-spacing:.1em;
+color:var(--gold);text-transform:uppercase;margin-bottom:6px}
+.fc h3{font-family:'Chakra Petch',sans-serif;font-size:.88rem;font-weight:700;margin-bottom:7px}
+.fc p{font-size:.82rem;color:var(--muted);line-height:1.55}
+.fc ul{list-style:none;margin-top:8px}.fc ul li{font-size:.8rem;color:var(--muted);padding:3px 0 3px 14px;position:relative}
+.fc ul li::before{content:'·';position:absolute;left:0;color:var(--teal);font-size:1.1rem;line-height:1.1}
+.faq{display:grid;gap:8px}
+details{background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+details summary{padding:15px 22px;cursor:pointer;font-weight:600;font-size:.88rem;list-style:none;
+display:flex;justify-content:space-between;align-items:center;user-select:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:'+';font-size:1.1rem;color:var(--teal);flex-shrink:0;margin-left:12px}
+details[open] summary::after{content:'×'}
+.fbd{padding:0 22px 16px;color:var(--muted);font-size:.85rem;line-height:1.65}
+.ppintro{background:var(--bg2);border:1px solid rgba(29,191,176,.2);border-radius:12px;
+padding:22px 26px;margin-bottom:42px}
+.ppintro p{color:var(--muted);font-size:.9rem;line-height:1.65}.ppintro strong{color:var(--text)}
+.toc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px 26px;margin-bottom:42px}
+.toc h3{font-family:'Chakra Petch',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.1em;
+color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+.toc ol{padding-left:18px}.toc li{margin-bottom:5px}.toc li a{font-size:.86rem}
+.pps{margin-bottom:42px}
+.ppnum{font-size:.66rem;font-weight:700;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+.pps h2{font-family:'Chakra Petch',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:14px;
+padding-top:24px;border-top:1px solid var(--border)}
+.pps p,.pps li{font-size:.87rem;color:var(--muted);line-height:1.7}
+.pps ul,.pps ol{padding-left:18px;margin-top:8px}.pps li{margin-bottom:4px}
+.ppt{width:100%;border-collapse:collapse;margin-top:14px;border-radius:8px;overflow:hidden;
+border:1px solid var(--border)}
+.ppt th{font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;
+padding:9px 14px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--border);text-align:left}
+.ppt td{font-size:.84rem;padding:11px 14px;border-bottom:1px solid var(--border);color:var(--muted);vertical-align:top}
+.ppt tr:last-child td{border-bottom:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{background:rgba(29,191,176,.07);border:1px solid rgba(29,191,176,.18);border-radius:8px;
+padding:6px 12px;font-size:.79rem;color:var(--teal)}
+.chip-ok{background:rgba(29,191,176,.07);border:1px solid rgba(29,191,176,.18);border-radius:8px;
+padding:6px 12px;font-size:.79rem;color:var(--teal)}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 24px;margin-top:72px}
+.fi2{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.fbrand{font-family:'Chakra Petch',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.12em;color:var(--muted)}
+.flinks{display:flex;flex-wrap:wrap;gap:16px}.flinks a{font-size:.79rem;color:var(--muted)}
+.flinks a:hover{color:var(--teal);text-decoration:none}
+.fcopy{width:100%;font-size:.74rem;color:var(--border);margin-top:6px}
+.appgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.appcard{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px;
+display:flex;flex-direction:column;gap:10px}
+.appcard .ai{font-size:2rem}.appcard h3{font-family:'Chakra Petch',sans-serif;font-size:.95rem;font-weight:700}
+.appcard p{font-size:.83rem;color:var(--muted);line-height:1.5;flex:1}
+.appcard a.alink{font-size:.82rem;font-weight:600;color:var(--teal)}
+.appcard.soon{opacity:.65}.appcard.soon a.alink{color:var(--gold)}
+.stat-row{display:flex;gap:32px;flex-wrap:wrap;margin-top:36px}
+.stat{text-align:center}.stat .sv{font-family:'Chakra Petch',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal)}
+.stat .sl{font-size:.78rem;color:var(--muted);margin-top:4px}
+@media(max-width:640px){.step{grid-template-columns:1fr}.sn{width:36px;height:36px;font-size:.78rem}
+nav{gap:12px}.hero{padding:48px 20px 40px}}
+</style></head><body><nav><a href="https://nalkudilstudio.github.io" class="brand"><span class="nb">NS</span>NALKUDIL STUDIO</a><a href="#steps" class="nl">Get Started</a><a href="#features" class="nl">Features</a><a href="#faq" class="nl">FAQ</a><div class="nr"><a href="https://nalkudilstudio.github.io/familymanager-docs/privacy-policy" class="nl">Privacy Policy</a><a href="https://nalkudilstudio.github.io" class="nl">← Studio</a></div></nav><div class="hero">
+<div class="hbadge">🏠 Family Manager — Getting Started</div>
+<h1>Your Intelligent<br>Home Guardian</h1>
+<p class="sub">One app for your family's finances, household, school, and shared life — with smart sync between two devices.</p>
+<div class="btns"><a href="#steps" class="btn bp">Let's Begin</a><a href="#features" class="btn bg2btn">Explore Features</a></div>
+</div><section id="steps"><div class="wrap">
+<div class="slabel">Getting Started</div><div class="stitle">Up & Running in 3 Steps</div>
+<div class="steps">
+<div class="step"><div class="sn">01</div><div><h3>📲 Download & Sign In</h3><p class="sdesc">Family Manager uses Google Sign-In for a secure, stable account that survives reinstalls.</p><ul><li>Download Family Manager from the Google Play Store</li><li>Tap 'Sign in with Google' and select your account</li><li>Complete the quick onboarding — add your name and your partner's name</li><li>Your account is ready — no password to remember</li><li>Enable biometric lock in Settings for extra security</li></ul></div></div>
+<div class="step"><div class="sn">02</div><div><h3>💳 Set Up Your Accounts & Opening Balances</h3><p class="sdesc">Add your bank accounts, credit cards, and cash wallets so the dashboard reflects your real financial picture.</p><ul><li>Go to Money → Accounts → Add Account</li><li>Add each account: Bank / Credit Card / Pay Later / Cash</li><li>Enter the current balance as the opening balance</li><li>For credit cards: add billing cycle day and payment due day</li><li>Transactions you log will update balances from this point forward</li></ul></div></div>
+<div class="step"><div class="sn">03</div><div><h3>🔗 Pair with Your Partner</h3><p class="sdesc">Family Manager creates a shared, synced space for two devices — yours and your partner's.</p><ul><li>One partner opens Settings → Pairing → Generate Code</li><li>Share the 6-character code with your partner</li><li>Partner enters the code on their device and confirms</li><li>Both devices now sync transactions, occasions, accounts, and more</li><li>Each person's data appears correctly attributed to them</li></ul></div></div>
+</div></div></section><section id="features"><div class="wrap">
+<div class="slabel">Feature Guide</div><div class="stitle">Know Your Modules</div>
+<div class="fgrid">
+<div class="fc"><div class="fi">📊</div><div class="ft">Money</div><h3>Dashboard & Transactions</h3><p>Your monthly financial summary — income, expenses, and closing balance — with a member filter to see each person's activity. SMS auto-parse imports transactions straight from bank messages.</p><ul><li>Month-by-month income vs expense view</li><li>SMS auto-import from bank/card notifications</li><li>Member filter: see Sarav's or Vidhya's view</li><li>Opening balance carried forward each month</li></ul></div>
+<div class="fc"><div class="fi">💳</div><div class="ft">Money</div><h3>Accounts & Credit Cards</h3><p>Track all your financial accounts in one place. Credit card and Pay Later accounts use deferred billing — CC spends don't hit your bank balance until the bill is paid.</p><ul><li>BANK / CREDIT / PAY LATER / CASH types supported</li><li>Pay CC Bill button creates a linked payment entry</li><li>Outstanding balance and credit limit tracked</li><li>Provider name + last 4 digits for easy identification</li></ul></div>
+<div class="fc"><div class="fi">📈</div><div class="ft">Money</div><h3>Cashflow Projection</h3><p>See your family's projected cash position 6 months ahead — based on recurring income, bills, and loan EMIs. CC spend is placed in the correct billing month, not the spend month.</p><ul><li>M+1 to M+6 projected balance chart</li><li>Recurring items and loan EMIs auto-populate</li><li>Deferred payments placed in correct month</li><li>Helps plan big purchases and avoid surprises</li></ul></div>
+<div class="fc"><div class="fi">🔁</div><div class="ft">Money</div><h3>Recurring & Loans</h3><p>Set up monthly and yearly recurring items — salaries, subscriptions, school fees. Loan Tracker auto-calculates EMIs and creates a recurring payment entry automatically.</p><ul><li>Monthly and yearly recurring support</li><li>Payment source: bank / credit card / UPI / cash</li><li>Loan EMI auto-calculated from principal, rate, tenure</li><li>Loan creates recurring outflow automatically</li></ul></div>
+<div class="fc"><div class="fi">🎉</div><div class="ft">Family</div><h3>Occasions & Reminders</h3><p>Never miss a birthday, anniversary, or family milestone. Occasions sync between both devices and send reminders days in advance.</p><ul><li>Add birthdays, anniversaries, and custom occasions</li><li>Set reminder days in advance (e.g. '3,2,1'  days before)</li><li>Yearly recurring or one-time events</li><li>Synced instantly between both devices</li></ul></div>
+<div class="fc"><div class="fi">🏠</div><div class="ft">Home</div><h3>Home Planner, School & Grocery</h3><p>Track household tasks with warranty reminders, manage your children's school fees and events, and maintain a shared grocery list — all synced between devices.</p><ul><li>Home Planner: tasks with warranty expiry tracking</li><li>School Manager: fee due dates and school events</li><li>Grocery List: shared between both devices</li><li>Insurance tracker with renewal reminders</li></ul></div>
+</div></div></section><section id="faq"><div class="wrap">
+<div class="slabel">FAQ</div><div class="stitle">Common Questions</div>
+<div class="faq">
+<details><summary>Is my financial data secure?</summary><div class="fbd">Yes. All data is stored on Google Firebase (asia-south1 region), which is ISO 27001, GDPR, and SOC 1/2/3 certified. We use Google Sign-In for authentication — no passwords are stored by us. Your data is never sold or shared with third parties.</div></details>
+<details><summary>How does SMS auto-parsing work?</summary><div class="fbd">Family Manager reads your incoming bank and card SMS messages to extract transaction details. It uses pattern matching on the message text — no message content is uploaded or stored. The SMS permission is used only on your device.</div></details>
+<details><summary>Can I use Family Manager without pairing a partner?</summary><div class="fbd">Yes — all modules work for a single user. Pairing simply enables real-time sync of transactions, accounts, and family data between two devices. You can pair anytime after initial setup.</div></details>
+<details><summary>What happens if I reinstall the app?</summary><div class="fbd">Because Family Manager uses Google Sign-In, your account UID is stable across reinstalls. Sign in again with the same Google account and your data will be restored from Firebase automatically.</div></details>
+<details><summary>How does credit card balance work?</summary><div class="fbd">When you log a credit card transaction, your bank balance is not affected — only the card's outstanding balance increases. When you pay the credit card bill (Pay CC Bill), both the bank balance decreases and the outstanding balance decreases. This mirrors real-world deferred billing.</div></details>
+<details><summary>Can both partners add transactions simultaneously?</summary><div class="fbd">Yes. Each device pushes changes to Firebase independently. Transactions are attributed using SELF/SPOUSE roles that are translated correctly on each device — so Vidhya's transactions always appear under Vidhya, and Sarav's under Sarav.</div></details>
+</div></div></section><footer><div class="fi2"><div class="fbrand">NALKUDIL STUDIO</div><div class="flinks"><a href="https://nalkudilstudio.github.io">← Studio Home</a><a href="https://nalkudilstudio.github.io/familymanager-docs/privacy-policy">Privacy Policy</a><a href="mailto:nalkudilstudio@gmail.com">Contact</a><a href="https://youtube.com/@nalkudil">YouTube</a><a href="https://instagram.com/nalkudil">Instagram</a></div><div class="fcopy">© 2026 Nalkudil Studio. Made with 💚 in Chennai, India.</div></div></footer></body></html>
