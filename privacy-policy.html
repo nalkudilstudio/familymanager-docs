@@ -1,159 +1,306 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Privacy Policy — Family Manager | Nalkudil Studio</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"><style>
-:root{--bg:#0D1B2A;--bg2:#0f2237;--card:#132842;--teal:#1DBFB0;--gold:#E8A83A;
---text:#e2ecf5;--muted:#7a96b0;--border:#1c3650}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.65;font-size:16px}
-a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
-nav{position:sticky;top:0;z-index:100;background:rgba(13,27,42,.96);backdrop-filter:blur(8px);
-border-bottom:1px solid var(--border);padding:0 max(20px,calc((100% - 960px)/2));
-display:flex;align-items:center;gap:28px;height:58px;flex-wrap:nowrap}
-.nb{width:28px;height:28px;background:var(--teal);border-radius:6px;display:flex;align-items:center;
-justify-content:center;font-family:'Chakra Petch',sans-serif;font-weight:800;font-size:.72rem;
-color:var(--bg);flex-shrink:0}
-.brand{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.12em;
-color:var(--text);display:flex;align-items:center;gap:8px;text-decoration:none!important;white-space:nowrap}
-.brand:hover{text-decoration:none}
-.nl{font-size:.82rem;color:var(--muted);transition:color .2s;white-space:nowrap}
-.nl:hover{color:var(--teal);text-decoration:none}
-.nr{margin-left:auto;display:flex;gap:18px;align-items:center}
-.wrap{max-width:960px;margin:0 auto;padding:0 24px}
-.hero{padding:72px 24px 56px;text-align:center;max-width:760px;margin:0 auto}
-.hbadge{display:inline-block;background:rgba(29,191,176,.1);border:1px solid rgba(29,191,176,.25);
-color:var(--teal);border-radius:20px;padding:5px 16px;font-size:.75rem;font-weight:600;
-letter-spacing:.07em;margin-bottom:22px}
-h1{font-family:'Chakra Petch',sans-serif;font-size:clamp(1.75rem,4.5vw,2.75rem);font-weight:700;
-line-height:1.18;margin-bottom:14px}
-.sub{font-size:1rem;color:var(--muted);max-width:520px;margin:0 auto 28px}
-.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:8px;
-font-weight:600;font-size:.88rem;transition:all .2s}
-.bp{background:var(--teal);color:var(--bg)}.bp:hover{background:#22d4c4;text-decoration:none;color:var(--bg)}
-.bg2btn{border:1px solid var(--border);color:var(--text)}.bg2btn:hover{border-color:var(--teal);color:var(--teal);text-decoration:none}
-section{padding:56px 0}section+section{border-top:1px solid var(--border)}
-.slabel{font-size:.68rem;font-weight:700;letter-spacing:.15em;color:var(--teal);text-transform:uppercase;margin-bottom:10px}
-.stitle{font-family:'Chakra Petch',sans-serif;font-size:clamp(1.2rem,2.5vw,1.65rem);font-weight:700;margin-bottom:36px}
-.steps{display:grid;gap:16px}
-.step{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px 28px;
-display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start}
-.sn{width:44px;height:44px;background:rgba(29,191,176,.1);border:1px solid rgba(29,191,176,.25);
-border-radius:9px;display:flex;align-items:center;justify-content:center;
-font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--teal);font-size:.88rem;flex-shrink:0}
-.step h3{font-family:'Chakra Petch',sans-serif;font-size:.92rem;font-weight:700;margin-bottom:6px}
-.step .sdesc{color:var(--muted);font-size:.86rem;margin-bottom:10px}
-.step ul{list-style:none}.step ul li{font-size:.84rem;color:var(--muted);padding:3px 0 3px 18px;position:relative}
-.step ul li::before{content:'→';position:absolute;left:0;color:var(--teal);font-size:.78rem;top:5px}
-.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
-.fc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px}
-.fi{font-size:1.65rem;margin-bottom:10px}.ft{font-size:.66rem;font-weight:700;letter-spacing:.1em;
-color:var(--gold);text-transform:uppercase;margin-bottom:6px}
-.fc h3{font-family:'Chakra Petch',sans-serif;font-size:.88rem;font-weight:700;margin-bottom:7px}
-.fc p{font-size:.82rem;color:var(--muted);line-height:1.55}
-.fc ul{list-style:none;margin-top:8px}.fc ul li{font-size:.8rem;color:var(--muted);padding:3px 0 3px 14px;position:relative}
-.fc ul li::before{content:'·';position:absolute;left:0;color:var(--teal);font-size:1.1rem;line-height:1.1}
-.faq{display:grid;gap:8px}
-details{background:var(--bg2);border:1px solid var(--border);border-radius:10px;overflow:hidden}
-details summary{padding:15px 22px;cursor:pointer;font-weight:600;font-size:.88rem;list-style:none;
-display:flex;justify-content:space-between;align-items:center;user-select:none}
-details summary::-webkit-details-marker{display:none}
-details summary::after{content:'+';font-size:1.1rem;color:var(--teal);flex-shrink:0;margin-left:12px}
-details[open] summary::after{content:'×'}
-.fbd{padding:0 22px 16px;color:var(--muted);font-size:.85rem;line-height:1.65}
-.ppintro{background:var(--bg2);border:1px solid rgba(29,191,176,.2);border-radius:12px;
-padding:22px 26px;margin-bottom:42px}
-.ppintro p{color:var(--muted);font-size:.9rem;line-height:1.65}.ppintro strong{color:var(--text)}
-.toc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px 26px;margin-bottom:42px}
-.toc h3{font-family:'Chakra Petch',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.1em;
-color:var(--muted);text-transform:uppercase;margin-bottom:12px}
-.toc ol{padding-left:18px}.toc li{margin-bottom:5px}.toc li a{font-size:.86rem}
-.pps{margin-bottom:42px}
-.ppnum{font-size:.66rem;font-weight:700;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
-.pps h2{font-family:'Chakra Petch',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:14px;
-padding-top:24px;border-top:1px solid var(--border)}
-.pps p,.pps li{font-size:.87rem;color:var(--muted);line-height:1.7}
-.pps ul,.pps ol{padding-left:18px;margin-top:8px}.pps li{margin-bottom:4px}
-.ppt{width:100%;border-collapse:collapse;margin-top:14px;border-radius:8px;overflow:hidden;
-border:1px solid var(--border)}
-.ppt th{font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;
-padding:9px 14px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--border);text-align:left}
-.ppt td{font-size:.84rem;padding:11px 14px;border-bottom:1px solid var(--border);color:var(--muted);vertical-align:top}
-.ppt tr:last-child td{border-bottom:none}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chip{background:rgba(29,191,176,.07);border:1px solid rgba(29,191,176,.18);border-radius:8px;
-padding:6px 12px;font-size:.79rem;color:var(--teal)}
-.chip-ok{background:rgba(29,191,176,.07);border:1px solid rgba(29,191,176,.18);border-radius:8px;
-padding:6px 12px;font-size:.79rem;color:var(--teal)}
-footer{background:var(--bg2);border-top:1px solid var(--border);padding:36px 24px;margin-top:72px}
-.fi2{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
-.fbrand{font-family:'Chakra Petch',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.12em;color:var(--muted)}
-.flinks{display:flex;flex-wrap:wrap;gap:16px}.flinks a{font-size:.79rem;color:var(--muted)}
-.flinks a:hover{color:var(--teal);text-decoration:none}
-.fcopy{width:100%;font-size:.74rem;color:var(--border);margin-top:6px}
-.appgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-.appcard{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px;
-display:flex;flex-direction:column;gap:10px}
-.appcard .ai{font-size:2rem}.appcard h3{font-family:'Chakra Petch',sans-serif;font-size:.95rem;font-weight:700}
-.appcard p{font-size:.83rem;color:var(--muted);line-height:1.5;flex:1}
-.appcard a.alink{font-size:.82rem;font-weight:600;color:var(--teal)}
-.appcard.soon{opacity:.65}.appcard.soon a.alink{color:var(--gold)}
-.stat-row{display:flex;gap:32px;flex-wrap:wrap;margin-top:36px}
-.stat{text-align:center}.stat .sv{font-family:'Chakra Petch',sans-serif;font-size:1.6rem;font-weight:700;color:var(--teal)}
-.stat .sl{font-size:.78rem;color:var(--muted);margin-top:4px}
-@media(max-width:640px){.step{grid-template-columns:1fr}.sn{width:36px;height:36px;font-size:.78rem}
-nav{gap:12px}.hero{padding:48px 20px 40px}}
-</style></head><body><nav><a href="https://nalkudilstudio.github.io" class="brand"><span class="nb">NS</span>NALKUDIL STUDIO</a><a href="https://nalkudilstudio.github.io/familymanager-docs" class="nl">Getting Started</a><div class="nr"><a href="https://nalkudilstudio.github.io" class="nl">← Studio</a></div></nav><div class="hero" style="padding-bottom:32px">
-<div class="hbadge">🏠 Family Manager</div>
-<h1>Privacy Policy</h1>
-<p class="sub" style="margin-bottom:0">📅 Last updated: April 2026 &nbsp;·&nbsp; 🏢 Nalkudil Studio &nbsp;·&nbsp; 📧 nalkudilstudio@gmail.com</p>
-</div><div class="wrap"><div class="ppintro"><p>
-<strong>Our commitment:</strong> Family Manager handles your family's most sensitive data — finances, health appointments, school records.
-We treat it with the utmost care. Your data is stored securely on Google Firebase, used only to operate the app, 
-and never sold, shared with advertisers, or used for AI training.
-</p></div><div class="toc"><h3>Contents</h3><ol>
-<li><a href="#s1">Information We Collect</a></li>
-<li><a href="#s2">SMS Permission</a></li>
-<li><a href="#s3">How We Use Your Data</a></li>
-<li><a href="#s4">Data Storage & Security</a></li>
-<li><a href="#s5">Third-Party Services</a></li>
-<li><a href="#s6">Data Retention</a></li>
-<li><a href="#s7">Children's Data</a></li>
-<li><a href="#s8">Your Rights</a></li>
-<li><a href="#s9">Policy Changes</a></li>
-<li><a href="#s10">Contact Us</a></li>
-</ol></div><div class="wrap"><div class="pps" id="s1"><div class="ppnum">Section 01</div><h2>Information We Collect</h2><p><strong>Information you provide directly:</strong></p>
-<ul><li>Account details — name and email address via Google Sign-In</li>
-<li>Financial data — transactions, account names and balances, credit card details (name, last 4 digits, provider), loan records, recurring items</li>
-<li>Family data — occasions, appointments, school records, grocery lists, home planner tasks, insurance policies, contacts</li>
-<li>Family structure — member names and roles (SELF / SPOUSE)</li>
-<li>Pairing data — a unique family ID generated when two devices are linked</li></ul>
-<p style="margin-top:12px"><strong>Information collected automatically:</strong></p>
-<ul><li>Device information — Android version and device model, used by Firebase for crash reporting only</li>
-<li>No advertising IDs, no location data, no microphone or camera access</li></ul></div><div class="pps" id="s2"><div class="ppnum">Section 02</div><h2>SMS Permission</h2><p>Family Manager requests permission to read SMS messages for the <strong>SMS Auto-Parse</strong> feature. This feature reads incoming bank and credit card notification messages to automatically extract transaction details.</p>
-<ul><li>SMS reading happens entirely <strong>on your device</strong></li>
-<li>No SMS message content is uploaded to our servers</li>
-<li>Only extracted transaction data (amount, merchant, date) is stored in Firebase</li>
-<li>You can decline the SMS permission — all other features continue to work normally</li>
-<li>The SMS permission is never used for any purpose other than transaction auto-import</li></ul></div><div class="pps" id="s3"><div class="ppnum">Section 03</div><h2>How We Use Your Data</h2><p>We use your data solely to operate Family Manager. Specifically:</p>
-<ul><li>To sync financial and family data between you and your partner's paired device in real time</li>
-<li>To calculate and display your monthly dashboard, cashflow projection, and loan schedules</li>
-<li>To send push notifications for occasion reminders and bill due date alerts that you have opted into</li>
-<li>To improve app stability through anonymised Firebase crash reports</li></ul>
-<p style="margin-top:12px"><strong>We never:</strong> sell your data · share it with advertisers · use your financial content for AI training · read your data for any purpose other than operating the app</p></div><div class="pps" id="s4"><div class="ppnum">Section 04</div><h2>Data Storage &amp; Security</h2><p>Your data is stored on <strong>Google Firebase (Firestore)</strong>, hosted in the <strong>asia-south1 region</strong> (Mumbai, India). Firebase is certified under ISO 27001, SOC 1/2/3, and GDPR.</p>
-<ul><li>Authentication is handled by Google Sign-In — your password is managed by Google, not us</li>
-<li>Biometric lock (if enabled) is processed entirely on-device using Android's BiometricManager — biometric data is never transmitted</li>
-<li>Firebase Security Rules restrict each family's data to authenticated members of that family only</li></ul></div><div class="pps" id="s5"><div class="ppnum">Section 05</div><h2>Third-Party Services</h2><table class="ppt"><thead><tr><th>Service</th><th>Purpose</th></tr></thead><tbody>
-<tr><td>Google Firebase Auth</td><td>Secure sign-in via Google</td></tr>
-<tr><td>Google Firebase Firestore</td><td>Family data storage and real-time sync (asia-south1)</td></tr>
-<tr><td>Google Firebase Cloud Messaging</td><td>Push notifications for reminders and alerts</td></tr>
-</tbody></table>
-<p style="margin-top:12px">No advertising SDKs, analytics trackers, or other third-party services are included.</p></div><div class="pps" id="s6"><div class="ppnum">Section 06</div><h2>Data Retention</h2><p>Your data is retained for as long as your account is active. To delete your account and all associated data, contact us at <a href="mailto:nalkudilstudio@gmail.com">nalkudilstudio@gmail.com</a>. We will permanently delete your data within 30 days of your request.</p></div><div class="pps" id="s7"><div class="ppnum">Section 07</div><h2>Children's Data</h2><p>Family Manager is designed for adults managing a household. It may store children's names and school or appointment information entered by parents. This information is:</p>
-<ul><li>Entered by and accessible only to the parents of that family</li>
-<li>Never shared or sold to any third party</li>
-<li>Deleted along with the parent's account upon request</li></ul>
-<p style="margin-top:12px">Family Manager is not directed at children and does not knowingly collect data directly from anyone under 18.</p></div><div class="pps" id="s8"><div class="ppnum">Section 08</div><h2>Your Rights</h2><p>Depending on your location, you may have the right to:</p>
-<ul><li>Access the personal data we hold about you</li>
-<li>Request correction of inaccurate data</li>
-<li>Request permanent deletion of your data</li>
-<li>Object to certain processing of your data</li>
-<li>Data portability — receive your data in a readable format</li></ul>
-<p style="margin-top:12px">To exercise any of these rights, contact us at <a href="mailto:nalkudilstudio@gmail.com">nalkudilstudio@gmail.com</a>. We will respond within 30 days.</p></div><div class="pps" id="s9"><div class="ppnum">Section 09</div><h2>Policy Changes</h2><p>We may update this Privacy Policy as the app evolves. We will notify you of significant changes via an in-app notice. The "Last Updated" date at the top of this page will always reflect the most recent version.</p></div><div class="pps" id="s10"><div class="ppnum">Section 10</div><h2>Contact Us</h2><p>Questions, concerns, or data requests? We're a small family studio — every message is read personally.</p>
-<p style="margin-top:12px"><a href="mailto:nalkudilstudio@gmail.com">nalkudilstudio@gmail.com</a></p></div></div><footer><div class="fi2"><div class="fbrand">NALKUDIL STUDIO</div><div class="flinks"><a href="https://nalkudilstudio.github.io">← Studio Home</a><a href="https://nalkudilstudio.github.io/familymanager-docs">Getting Started</a><a href="mailto:nalkudilstudio@gmail.com">Contact</a></div><div class="fcopy">© 2026 Nalkudil Studio. Made with 💚 in Chennai, India.</div></div></footer></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Privacy Policy — Family Manager | Nalkudil Studio</title><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/><style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal:  #1DBFB0; --gold: #E8A83A; --navy: #0D1B2A; --navy2: #112233;
+      --card:  rgba(255,255,255,0.04); --border: rgba(255,255,255,0.07);
+      --text:  #F0F4F8; --muted: rgba(240,244,248,0.45);
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--navy); color: var(--text); font-family: 'Inter', sans-serif;
+           line-height: 1.6; min-height: 100vh; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center;
+      padding: 0 40px; height: 60px;
+      background: rgba(13,27,42,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; flex-shrink: 0;
+    }
+    .nav-ns {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: linear-gradient(135deg, rgba(29,191,176,0.2), rgba(232,168,58,0.1));
+      border: 1px solid rgba(29,191,176,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Chakra Petch', sans-serif; font-size: 12px; font-weight: 700;
+    }
+    .nav-ns .nn { color: var(--teal); } .nav-ns .ns { color: var(--gold); }
+    .nav-brand {
+      font-family: 'Chakra Petch', sans-serif; font-size: 14px;
+      font-weight: 700; letter-spacing: 1px; color: var(--text);
+    }
+    .nav-center {
+      display: flex; gap: 28px; list-style: none;
+      position: absolute; left: 50%; transform: translateX(-50%);
+    }
+    .nav-center a {
+      color: var(--muted); text-decoration: none;
+      font-size: 13px; letter-spacing: 0.5px; transition: color 0.2s;
+    }
+    .nav-center a:hover { color: var(--teal); }
+    .nav-right { margin-left: auto; display: flex; gap: 20px; align-items: center; }
+    .nav-right a {
+      color: var(--muted); text-decoration: none;
+      font-size: 13px; letter-spacing: 0.3px; transition: color 0.2s;
+    }
+    .nav-right a:hover { color: var(--teal); }
+    .nav-right a.back { color: var(--teal); }
+    .nav-right a.back:hover { opacity: 0.8; }
+
+    /* hero */
+    .page-hero {
+      padding: 110px 24px 64px; text-align: center;
+      max-width: 760px; margin: 0 auto;
+      position: relative;
+    }
+    .page-hero::before {
+      content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 500px; height: 400px;
+      background: radial-gradient(circle, rgba(29,191,176,0.09) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+    .page-hero > * { position: relative; z-index: 1; }
+    .app-badge {
+      display: inline-block; margin-bottom: 18px;
+      background: rgba(29,191,176,0.08); border: 1px solid rgba(29,191,176,0.25);
+      border-radius: 20px; padding: 5px 16px;
+      font-family: 'Chakra Petch', sans-serif; font-size: 11px;
+      letter-spacing: 2px; color: var(--teal); text-transform: uppercase;
+    }
+    h1 {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: clamp(28px, 5vw, 48px); font-weight: 700; line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    h1 .teal { color: var(--teal); } h1 .gold { color: var(--gold); }
+    .hero-sub {
+      color: var(--muted); font-size: clamp(14px, 2vw, 16px);
+      max-width: 520px; margin: 0 auto 32px; line-height: 1.75;
+    }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      padding: 12px 26px; border-radius: 10px; font-size: 14px; font-weight: 600;
+      text-decoration: none; transition: all 0.2s; cursor: pointer; letter-spacing: 0.3px;
+    }
+    .btn-primary { background: var(--teal); color: var(--navy); font-weight: 700; }
+    .btn-primary:hover { background: #22d4c4; transform: translateY(-1px); }
+    .btn-ghost { border: 1px solid var(--border); color: var(--text); }
+    .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+
+    /* sections */
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0 24px; }
+    .section-wrap { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
+    .section-label {
+      font-family: 'Chakra Petch', sans-serif; font-size: 11px;
+      letter-spacing: 4px; color: var(--teal); text-transform: uppercase; margin-bottom: 10px;
+    }
+    h2 {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: clamp(22px, 3.5vw, 32px); font-weight: 700; margin-bottom: 10px;
+    }
+    .section-sub { color: var(--muted); font-size: 15px; max-width: 480px; margin-bottom: 44px; }
+
+    /* steps */
+    .steps-grid { display: grid; gap: 16px; }
+    .step-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 28px 32px;
+      display: grid; grid-template-columns: 52px 1fr; gap: 20px; align-items: start;
+    }
+    .step-num {
+      width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;
+      background: rgba(29,191,176,0.08); border: 1px solid rgba(29,191,176,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Chakra Petch', sans-serif; font-size: 13px;
+      font-weight: 700; color: var(--teal);
+    }
+    .step-body h3 {
+      font-family: 'Chakra Petch', sans-serif; font-size: 16px; font-weight: 700;
+      margin-bottom: 6px; color: var(--text);
+    }
+    .step-body p { color: var(--muted); font-size: 14px; margin-bottom: 14px; line-height: 1.65; }
+    .step-body ul { list-style: none; }
+    .step-body ul li {
+      font-size: 13px; color: var(--muted); padding: 4px 0 4px 18px;
+      position: relative; line-height: 1.55;
+    }
+    .step-body ul li::before {
+      content: '→'; position: absolute; left: 0; color: var(--teal); font-size: 11px; top: 5px;
+    }
+
+    /* features grid */
+    .features-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px;
+    }
+    .feature-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 26px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .feature-card:hover { border-color: rgba(29,191,176,0.3); transform: translateY(-2px); }
+    .feature-icon { font-size: 32px; margin-bottom: 12px; }
+    .feature-tag {
+      font-family: 'Chakra Petch', sans-serif; font-size: 10px;
+      letter-spacing: 2px; color: var(--gold); text-transform: uppercase; margin-bottom: 6px;
+    }
+    .feature-card h3 {
+      font-family: 'Chakra Petch', sans-serif; font-size: 15px;
+      font-weight: 700; margin-bottom: 8px; color: var(--text);
+    }
+    .feature-card p { color: var(--muted); font-size: 13px; line-height: 1.6; }
+    .feature-card ul { list-style: none; margin-top: 10px; }
+    .feature-card ul li {
+      font-size: 13px; color: var(--muted); padding: 3px 0 3px 14px; position: relative;
+    }
+    .feature-card ul li::before { content: '·'; position: absolute; left: 0; color: var(--teal); }
+
+    /* faq */
+    .faq-list { display: grid; gap: 8px; }
+    details {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+    details summary {
+      padding: 16px 22px; cursor: pointer; font-weight: 600; font-size: 14px;
+      list-style: none; display: flex; justify-content: space-between; align-items: center;
+      user-select: none;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after { content: '+'; font-size: 18px; color: var(--teal); flex-shrink: 0; margin-left: 12px; }
+    details[open] summary::after { content: '×'; }
+    .faq-body { padding: 0 22px 16px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+    /* privacy */
+    .pp-intro {
+      background: var(--card); border: 1px solid rgba(29,191,176,0.2);
+      border-radius: 14px; padding: 24px 28px; margin-bottom: 40px;
+    }
+    .pp-intro p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .pp-intro strong { color: var(--text); }
+    .toc-box {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 22px 28px; margin-bottom: 40px;
+    }
+    .toc-box h3 {
+      font-family: 'Chakra Petch', sans-serif; font-size: 11px;
+      letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-bottom: 14px;
+    }
+    .toc-box ol { padding-left: 18px; }
+    .toc-box li { margin-bottom: 6px; }
+    .toc-box li a { color: var(--teal); text-decoration: none; font-size: 14px; }
+    .toc-box li a:hover { text-decoration: underline; }
+    .pp-section { margin-bottom: 48px; }
+    .pp-section-num {
+      font-family: 'Chakra Petch', sans-serif; font-size: 10px;
+      letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px;
+    }
+    .pp-section h2 {
+      font-size: clamp(16px, 2.5vw, 20px); padding-top: 20px;
+      border-top: 1px solid var(--border); margin-bottom: 16px;
+    }
+    .pp-section p, .pp-section li { color: var(--muted); font-size: 14px; line-height: 1.75; }
+    .pp-section ul, .pp-section ol { padding-left: 20px; margin-top: 10px; }
+    .pp-section li { margin-bottom: 5px; }
+    .pp-table {
+      width: 100%; border-collapse: collapse; margin-top: 16px;
+      border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+    }
+    .pp-table th {
+      font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--muted);
+      text-transform: uppercase; padding: 10px 16px;
+      background: rgba(255,255,255,0.02); border-bottom: 1px solid var(--border); text-align: left;
+    }
+    .pp-table td {
+      font-size: 13px; padding: 12px 16px; border-bottom: 1px solid var(--border);
+      color: var(--muted); vertical-align: top;
+    }
+    .pp-table tr:last-child td { border-bottom: none; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .chip {
+      background: rgba(29,191,176,0.07); border: 1px solid rgba(29,191,176,0.2);
+      border-radius: 8px; padding: 6px 12px; font-size: 12px; color: var(--teal);
+    }
+
+    /* footer */
+    footer {
+      text-align: center; padding: 48px 24px;
+      border-top: 1px solid var(--border); margin-top: 40px;
+    }
+    .footer-logo {
+      font-family: 'Chakra Petch', sans-serif; font-size: 18px;
+      font-weight: 700; margin-bottom: 18px;
+    }
+    .footer-links {
+      display: flex; gap: 20px; justify-content: center;
+      flex-wrap: wrap; margin-bottom: 18px;
+    }
+    .footer-links a {
+      color: var(--muted); text-decoration: none; font-size: 13px; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-copy { color: var(--muted); font-size: 12px; }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 16px; }
+      .nav-center { display: none; }
+      .step-card { grid-template-columns: 1fr; }
+    }
+</style></head><body><nav>
+  <a href="https://nalkudilstudio.github.io" class="nav-logo">
+    <div class="nav-ns"><span class="nn">N</span><span class="ns">S</span></div>
+    <span class="nav-brand">NALKUDIL STUDIO</span>
+  </a>
+  <ul class="nav-center"><li><a href="https://nalkudilstudio.github.io/familymanager-docs">Getting Started</a></li></ul>
+  <div class="nav-right">
+    <a href="https://nalkudilstudio.github.io/familymanager-docs/privacy-policy">Privacy Policy</a>
+    <a href="https://nalkudilstudio.github.io" class="back">← Back to Studio</a>
+  </div>
+</nav><div class="page-hero" style="padding-bottom:32px">
+  <span class="app-badge">🏠 Family Manager</span>
+  <h1>Privacy Policy</h1>
+  <p class="hero-sub" style="margin-bottom:0">📅 Last updated: April 2026 &nbsp;·&nbsp; 🏢 Nalkudil Studio &nbsp;·&nbsp; 📧 nalkudilstudio@gmail.com</p>
+</div><div style="max-width:860px;margin:0 auto;padding:0 24px"><div class="pp-intro"><p><strong>Our commitment:</strong> Family Manager handles your family's most sensitive data — finances, health appointments, school records. We treat it with the utmost care. Your data is stored securely on Google Firebase, used only to operate the app, and never sold, shared with advertisers, or used for AI training.</p></div><div class="toc-box"><h3>Contents</h3><ol><li><a href="#s1">1. Information We Collect</a></li><li><a href="#s2">2. SMS Permission</a></li><li><a href="#s3">3. How We Use Your Data</a></li><li><a href="#s4">4. Data Storage & Security</a></li><li><a href="#s5">5. Third-Party Services</a></li><li><a href="#s6">6. Data Retention</a></li><li><a href="#s7">7. Children's Data</a></li><li><a href="#s8">8. Your Rights</a></li><li><a href="#s9">9. Policy Changes</a></li><li><a href="#s10">10. Contact Us</a></li></ol></div><div class="pp-section" id="s1">
+  <div class="pp-section-num">Section 01</div>
+  <h2>Information We Collect</h2><p><strong>Information you provide directly:</strong></p><ul><li>Account details — name and email via Google Sign-In</li><li>Financial data — transactions, account balances, credit card details, loan records, recurring items</li><li>Family data — occasions, appointments, school records, grocery lists, home planner tasks, insurance, contacts</li><li>Family structure — member names and roles (SELF / SPOUSE)</li><li>Pairing data — a unique family ID generated when two devices are linked</li></ul><p style='margin-top:12px'><strong>Collected automatically:</strong></p><ul><li>Android version and device model for Firebase crash reporting only</li><li>No advertising IDs, no location data, no microphone or camera access</li></ul>
+</div><div class="pp-section" id="s2">
+  <div class="pp-section-num">Section 02</div>
+  <h2>SMS Permission</h2><p>Family Manager requests SMS permission for the <strong>SMS Auto-Parse</strong> feature, which reads incoming bank and card messages to automatically extract transaction details.</p><ul><li>SMS reading happens entirely <strong>on your device</strong></li><li>No SMS content is uploaded to our servers</li><li>Only extracted transaction data (amount, merchant, date) is stored in Firebase</li><li>You can decline the SMS permission — all other features continue to work normally</li><li>The SMS permission is never used for any other purpose</li></ul>
+</div><div class="pp-section" id="s3">
+  <div class="pp-section-num">Section 03</div>
+  <h2>How We Use Your Data</h2><p>We use your data solely to operate Family Manager:</p><ul><li>To sync financial and family data between your paired devices in real time</li><li>To calculate your monthly dashboard, cashflow projection, and loan schedules</li><li>To send push notifications for occasion reminders and bill due dates you have opted into</li><li>To improve stability through anonymised Firebase crash reports</li></ul><p style='margin-top:12px'><strong>We never:</strong> sell your data · share with advertisers · use your financial content for AI training</p>
+</div><div class="pp-section" id="s4">
+  <div class="pp-section-num">Section 04</div>
+  <h2>Data Storage &amp; Security</h2><p>Your data is stored on <strong>Google Firebase (Firestore)</strong> in the <strong>asia-south1 region</strong> (Mumbai, India). Firebase is certified under ISO 27001, SOC 1/2/3, and GDPR.</p><ul><li>Authentication is handled by Google Sign-In — your password is managed by Google, not us</li><li>Biometric lock (if enabled) is processed entirely on-device using Android's BiometricManager</li><li>Firebase Security Rules restrict each family's data to authenticated members of that family only</li></ul>
+</div><div class="pp-section" id="s5">
+  <div class="pp-section-num">Section 05</div>
+  <h2>Third-Party Services</h2><table class="pp-table"><thead><tr><th>Service</th><th>Purpose</th></tr></thead><tbody><tr><td>Google Firebase Auth</td><td>Secure sign-in via Google</td></tr><tr><td>Google Firebase Firestore</td><td>Family data storage and real-time sync (asia-south1)</td></tr><tr><td>Google Firebase Cloud Messaging</td><td>Push notifications for reminders and alerts</td></tr></tbody></table><p style='margin-top:12px'>No advertising SDKs, analytics trackers, or other third-party services are included.</p>
+</div><div class="pp-section" id="s6">
+  <div class="pp-section-num">Section 06</div>
+  <h2>Data Retention</h2><p>Your data is retained for as long as your account is active. To delete your account and all associated data, contact us at <a href='mailto:nalkudilstudio@gmail.com' style='color:var(--teal)'>nalkudilstudio@gmail.com</a>. We will permanently delete your data within 30 days of your request.</p>
+</div><div class="pp-section" id="s7">
+  <div class="pp-section-num">Section 07</div>
+  <h2>Children's Data</h2><p>Family Manager is designed for adults managing a household. Children's names and school or appointment information entered by parents is:</p><ul><li>Accessible only to the parents of that family</li><li>Never shared or sold to any third party</li><li>Deleted along with the parent's account upon request</li></ul>
+</div><div class="pp-section" id="s8">
+  <div class="pp-section-num">Section 08</div>
+  <h2>Your Rights</h2><p>You may have the right to access, correct, delete, or port your personal data. Contact us at <a href='mailto:nalkudilstudio@gmail.com' style='color:var(--teal)'>nalkudilstudio@gmail.com</a> and we will respond within 30 days.</p>
+</div><div class="pp-section" id="s9">
+  <div class="pp-section-num">Section 09</div>
+  <h2>Policy Changes</h2><p>We may update this policy as the app evolves. We will notify you of significant changes via an in-app notice. The 'Last Updated' date at the top of this page always reflects the most recent version.</p>
+</div><div class="pp-section" id="s10">
+  <div class="pp-section-num">Section 10</div>
+  <h2>Contact Us</h2><p>Questions, concerns, or data requests? We're a small family studio — every message is read personally.</p><p style='margin-top:10px'><a href='mailto:nalkudilstudio@gmail.com' style='color:var(--teal)'>nalkudilstudio@gmail.com</a></p>
+</div></div><footer>
+  <div class="footer-logo"><span style="color:var(--teal)">NALKUDIL</span> <span style="color:var(--gold)">STUDIO</span></div>
+  <div class="footer-links">
+    <a href="https://nalkudilstudio.github.io">← Studio Home</a>
+    <a href="https://nalkudilstudio.github.io/familymanager-docs/privacy-policy">Privacy Policy</a>
+    <a href="mailto:nalkudilstudio@gmail.com">Contact</a>
+    <a href="https://www.youtube.com/@nalkudil" target="_blank">YouTube</a>
+    <a href="https://www.instagram.com/nalkudil/" target="_blank">Instagram</a>
+    <a href="https://github.com/nalkudilstudio" target="_blank">GitHub</a>
+  </div>
+  <p class="footer-copy">© 2026 <a href="https://nalkudilstudio.github.io" style="color:var(--teal);text-decoration:none;">Nalkudil Studio</a>. Made with 💚 in Chennai, India.</p>
+</footer></body></html>
